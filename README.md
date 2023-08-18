@@ -10,32 +10,24 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 
 ## Overview
+I successfully completed the challenge using fundamental knowledge of HTML and CSS, specifically leveraging the Flexbox layout model. This project showcases my ability to create visually appealing designs while effectively utilizing modern web development techniques.
 
 ### Screenshot
 
 ![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+This above picture show the Screenshot of my page.
 
 ### Links
 
-- Solution URL: [Add solution URL here]([[https://your-solution-url.com](https://github.com/GIRISHSHUKLAA/QR-Code)](https://github.com/GIRISHSHUKLAA/QR-Code.git))
-- Live Site URL: [Add live site URL here]([https://your-live-site-url.com](https://girishshuklaa.github.io/QR-Code/))
+- Solution URL: https://github.com/GIRISHSHUKLAA/QR-Code.git
+- Live Site URL: https://girishshuklaa.github.io/QR-Code/
 
-## My process
 
 ### Built with
 
@@ -46,46 +38,136 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+"""
+Using my fundamental understanding of HTML and CSS, I have successfully accomplished this challenge. I have refreshed my familiarity with flexbox in order to complete this challenge.
 
-To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Outfit:wght@100&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | QR code component</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="image">
+      <img src="images/image-qr-code.png" alt="QR code image">
+      <p> Improve your front-end skills by building projects </p>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/GIRISHSHUKLAA">Girish</a>.
+  </div>
+</body>
+
+</html>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hind", sans-serif;
+  font-family: "Outfit", sans-serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 400px;
+  height: 580px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.image img {
+  width: 100%;
+  height: 60%;
+  border-radius: 15px;
+}
+
+.image p {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  color: hsl(218, 44%, 22%);
+  padding-top: 30px;
+}
+
+.image p:nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: hsl(220, 15%, 55%);
+}
+
+/* Screen size 375px */
+@media only screen and (max-width: 375px) {
+  .image {
+    width: 310px;
+    height: 480px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .image p {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    color: hsl(218, 44%, 22%);
+    padding-top: 30px;
+  }
 }
 
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+### Future Enhancements
 
-### Continued development
+While this project successfully demonstrates my grasp of HTML and CSS, there are several potential improvements on the horizon:
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- CSS Grid Integration: Consider integrating CSS Grid layout techniques to expand your repertoire and create more complex and intricate designs.
+- JavaScript Interactivity: Incorporate JavaScript to add interactivity and dynamic features, enhancing user engagement and creating a more polished user experience.
+- Browser Compatibility: Extend compatibility testing to a wider range of browsers and devices to ensure a seamless experience for all users.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Frontend Mentor](https://www.frontendmentor.io/home)) - I get this challenge from Frontend Mentor. It's a beautiful community to join.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Girish](https://github.com/GIRISHSHUKLAA))
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I appreciate [Frontend Mentor]'s provision of this challenge, as it presents an opportunity for me to enhance my skills.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
